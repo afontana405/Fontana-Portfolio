@@ -39,6 +39,24 @@ nav ul {
     margin-left: 20px;
 }
 
+.my-creations {
+    float: right;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-creations #first-project {
+    height: 200px;
+    width: 40%;
+    background-color: #000;
+}
+
+#first-project img {
+    height: 200px;
+    width: 100%;
+}
+
 .about-me, .my-creations {
     width: 75%;
     margin-bottom: 20px;
@@ -54,13 +72,6 @@ nav ul {
     border-radius: 50px;
 }
 
-.my-creations {
-    float: right;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .project {
     height: 200px;
     width: 25%;
@@ -68,13 +79,12 @@ nav ul {
     background-color: #000;
 }
 
-.my-creations #first-project {
+.project img {
     height: 200px;
-    width: 40%;
-    background-color: #000;
+    width: 100%;
 }
 
-.my-creations h2, #first-project h2 {
+.content h2 {
     display: flex;
     justify-content: center;
     text-decoration: underline;
