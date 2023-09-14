@@ -10,7 +10,7 @@ header {
     font-size: 200%;
     color: #fff;
     text-shadow: 5px 5px 5px #000;
-    background-image: url(portfolio\ header.jpg);
+    background-image: url(./images/portfolio\ header.jpg);
     background-position: center;
     background-size: 100%;
 }
@@ -31,6 +31,53 @@ nav ul {
     justify-content: space-between;
     min-width: 300px;
     text-shadow:  3px 3px 2px #000;
+}
+
+.content {
+    width: 100%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.about-me, .my-creations {
+    width: 75%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+    border-style: outset;
+    border-width: 5px;
+    border-color: blueviolet;
+    border-radius: 50px;
+}
+
+.my-creations {
+    float: right;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project {
+    height: 200px;
+    width: 25%;
+    justify-content: center;
+    background-color: #000;
+}
+
+.my-creations #first-project {
+    height: 200px;
+    width: 40%;
+    background-color: #000;
+}
+
+.my-creations h2, #first-project h2 {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
 }
 
 .contact-me {
