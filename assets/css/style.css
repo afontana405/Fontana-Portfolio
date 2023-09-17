@@ -1,7 +1,4 @@
-body {
-
-}
-
+/* sets formatting for header */
 header {
     display: flex;
     align-items: center;
@@ -10,11 +7,12 @@ header {
     font-size: 200%;
     color: #fff;
     text-shadow: 5px 5px 5px #000;
-    background-image: url(./images/portfolio\ header.jpg);
+    background-image: url(../images/portfolio\ header.jpg);
     background-position: center;
     background-size: 100%;
 }
 
+/* sets formatting for nav bar */
 nav {
     display: flex;
     justify-content: right;
@@ -26,6 +24,7 @@ nav {
     height: 100px;
 }
 
+/* sets format for list within nav bar */
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -33,30 +32,21 @@ nav ul {
     text-shadow:  3px 3px 2px #000;
 }
 
+/* sets format for main tag */
 .content {
     width: 100%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.my-creations {
-    float: right;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
+/* sets formatting for h2 elements within main tag */
+.content h2 {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
 }
 
-.my-creations #first-project {
-    height: 200px;
-    width: 40%;
-    background-color: #000;
-}
-
-#first-project img {
-    height: 200px;
-    width: 100%;
-}
-
+/* sets format for sections within main tag */
 .about-me, .my-creations {
     width: 75%;
     margin-bottom: 20px;
@@ -72,6 +62,28 @@ nav ul {
     border-radius: 50px;
 }
 
+/* adds more detial to section containing my projects */
+.my-creations {
+    float: right;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* makes first project bigger than the others */
+.my-creations #first-project {
+    height: 200px;
+    width: 40%;
+    background-color: #000;
+}
+
+/* makes first project bigger than the others */
+#first-project img {
+    height: 200px;
+    width: 100%;
+}
+
+/* sets formatting for my other projects */
 .project {
     height: 200px;
     width: 25%;
@@ -79,17 +91,13 @@ nav ul {
     background-color: #000;
 }
 
+/* sets formatting for my other projects */
 .project img {
     height: 200px;
     width: 100%;
 }
 
-.content h2 {
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-}
-
+/* sets format for my contact info located in footer */
 .contact-me {
     width: 100%;
     height: 150px;
@@ -100,6 +108,7 @@ nav ul {
     position: absolute;
 }
 
+/* sets format for h1 element in footer */
 .contact-me h1 {
     text-decoration: underline;
     position: absolute;
@@ -108,6 +117,7 @@ nav ul {
     font-size: 250%;
 }
 
+/* sets format for list elements within footer */
 .contact-me li {
     display: inline-flex;
     justify-content: space-evenly;
