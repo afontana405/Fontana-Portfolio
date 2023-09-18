@@ -6,7 +6,6 @@ header {
     height: 300px;
     font-size: 200%;
     color: #fff;
-    text-shadow: 5px 5px 5px #000;
     background-image: url(../images/portfolio\ header.jpg);
     background-position: center;
     background-size: 100%;
@@ -39,13 +38,6 @@ nav ul {
     margin-left: 20px;
 }
 
-/* sets formatting for h2 elements within main tag */
-.content h2 {
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-}
-
 /* sets format for sections within main tag */
 .about-me, .my-creations, .creations-cont {
     width: 75%;
@@ -63,6 +55,7 @@ nav ul {
     border-radius: 50px;
 }
 
+/* formates the picture within about me section */
 .about-me .selfie {
     height: 300px;
     width: 30%;
@@ -71,17 +64,21 @@ nav ul {
     top: -50px;
 }
 
+/* formates the picture within about me section */
 .selfie {
     height: 100%;
     width: 100%;
 }
 
+/* formates h2 tag within about me section */
 .about-me h2 {
     font-size: 200%;
-    display: inline-flex;
-    justify-content: left;
+    display: block;
+    justify-content: center;
+    text-decoration: underline;
 }
 
+/* sets font size for text within about me */
 .about-me p {
     font-size: 140%;
 }
@@ -93,6 +90,14 @@ nav ul {
     justify-content: space-between;
     align-items: center;
 }
+
+/* sets formatting for h2 elements within these sections */
+.my-creations h2, .creations-cont h2 {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
 /* makes first project bigger than the others */
 .my-creations #first-project {
     height: 300px;
@@ -168,13 +173,17 @@ nav ul {
     font-size: 200%;
 }
 
+/* changes display based on screen size */
 @media screen and (max-width: 800px) {
+    /* removes image when screen is below 800px */
     .about-me .selfie img {
         visibility: collapse;
     }
+    /* makes the sections within main tag take up whole screen */
     .about-me, .my-creations, .creations-cont {
         width: 100%;
     }
+    /* makes the text within about me section smaller */
     .about-me p {
         font-size: 100%;
     }
